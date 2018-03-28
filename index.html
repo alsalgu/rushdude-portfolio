@@ -9,46 +9,65 @@
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/default-skin/default-skin.min.css'>
   <link rel="stylesheet" href="css/stylesheet.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  
+
 </head>
 
 <body>
+  <div class="main w-100 p-2">
+    <!-- Navigation Tab Bar-->
+    <div class="container p-2 justify-contents-center">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active show" data-toggle="tab" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#character">Character Design</a>
+        </li>
+      </ul>
+      <!-- Content of Tabs -->
+      <!-- Tab One -->
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade p-2 active show" id="home">
+          <div class="jumbotron">
+            <h1 class="display-3">Flameo,Hotman!</h1>
+            <p class="lead">This portfolio is under construction.</p>
+            <hr class="my-4">
+            <p>The Webmaster needs some work.</p>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="#" role="button">Useless Button</a>
+            </p>
+          </div>
+        </div>
+        <!-- Tab Two -->
+        <div class="tab-pane fade p-2" id="character">
+          <!-- Gallery Images -->
+          <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
 
-  <h2>First gallery:</h2>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg" itemprop="contentUrl" data-size="1024x1024">
+              <img src="https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg" itemprop="thumbnail" alt="Image description" />
+          </a>
+              <figcaption itemprop="caption description">Image caption 1</figcaption>
 
-  <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+            </figure>
 
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg" itemprop="contentUrl" data-size="1024x1024">
-          <img src="https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-      <figcaption itemprop="caption description">Image caption 1</figcaption>
+            <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+              <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl" data-size="964x1024">
+              <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
+          </a>
+              <figcaption itemprop="caption description">Image caption 2</figcaption>
+            </figure>
+            <!-- End Gallery Images -->
+          </div>
+        </div>
+      </div>
+      <!-- Gallery Row -->
+      <div class="row container">
 
-    </figure>
-
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg" itemprop="contentUrl" data-size="964x1024">
-          <img src="https://farm2.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-      <figcaption itemprop="caption description">Image caption 2</figcaption>
-    </figure>
-
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_b.jpg" itemprop="contentUrl" data-size="1024x683">
-          <img src="https://farm7.staticflickr.com/6175/6176698785_7dee72237e_m.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-      <figcaption itemprop="caption description">Image caption 3</figcaption>
-    </figure>
-
-    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-      <a href="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_b.jpg" itemprop="contentUrl" data-size="1024x768">
-          <img src="https://farm6.staticflickr.com/5023/5578283926_822e5e5791_m.jpg" itemprop="thumbnail" alt="Image description" />
-      </a>
-      <figcaption itemprop="caption description">Image caption 4</figcaption>
-    </figure>
-
-
+      </div>
+    </div>
   </div>
+
 
 
 
@@ -119,8 +138,9 @@
   </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.1/photoswipe-ui-default.min.js'></script>
-
-
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
   <script src="js/index.js"></script>
 
