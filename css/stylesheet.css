@@ -18,10 +18,11 @@ body {
 }
 
 .my-gallery figure {
-  display: block;
+  display: flex;
   float: left;
   margin: 0 5px 5px 0;
-  width: 150px;
+  height: 350px;
+  width: 350px;
 }
 
 .my-gallery figcaption {
