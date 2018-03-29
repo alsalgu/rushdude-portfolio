@@ -5,6 +5,7 @@ html {
 
 body {
   display: flex;
+  min-width: 400px;
 }
 
 .my-gallery {

@@ -20,24 +20,36 @@
     <div class="container p-2 justify-contents-center">
       <div class="row">
         <ul class="nav nav-tabs col-8">
-          <li class="nav-item">
+          <li class="nav-item d-none d-md-block">
             <a class="nav-link active show" data-toggle="tab" href="#home">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item d-none d-sm-block">
             <a class="nav-link" data-toggle="tab" href="#character">Character Design</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item d-none d-sm-block">
             <a class="nav-link" data-toggle="tab" href="#prop">Prop Design</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item d-none d-sm-block">
             <a class="nav-link" data-toggle="tab" href="#sketches">Storyboard & Sketches</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item d-none d-sm-block">
             <a class="nav-link" data-toggle="tab" href="#pixel">Pixel Art</a>
+          </li>
+          <li class="nav-item dropdown d-sm-none">
+            <a class="nav-link dropdown-toggle btn btn-primary btn-lg" data-toggle="dropdown" href="#!" role="button" aria-haspopup="true" aria-expanded="false">
+              Galleries</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" data-toggle="tab" href="#home">About</a>
+              <a class="dropdown-item" data-toggle="tab" href="#character">Character Design</a>
+              <a class="dropdown-item" data-toggle="tab" href="#prop">Prop Design</a>
+              <a class="dropdown-item" data-toggle="tab" href="#sketches">Storyboard & Sketches</a>
+              <a class="dropdown-item" data-toggle="tab" href="#pixel">Pixel Art</a>
+            </div>
           </li>
         </ul>
         <div class="col-4 text-right border border-primary border-top-0 border-right-0 border-left-0">
-          <h2 class="display-font">Angel Saldana</h2>
+          <h2 class="display-font d-none d-sm-block">Angel Saldana</h2>
+          <h2 class="display-font d-sm-none">AS</h2>
         </div>
       </div>
       <!-- Content of Tabs -->
@@ -45,12 +57,34 @@
       <div id="myTabContent" class="tab-content">
         <div class="tab-pane fade p-2 active show" id="home">
           <div class="jumbotron row w-100">
-            <div class="col-4">
-              <img alt="solemn lady" src="static/art/home-image.png" />
+            <div class="d-none d-md-block w-25 text-center">
+              <img class="" alt="solemn lady" src="static/art/home-image.png" / style="height: 500px;">
             </div>
-            <div class="col container-fluid">
+            <div class="d-none d-md-block w-75 pl-4 pr-5 pb-5">
               <h1 class="display-3 display-font">Angel Saldana</h1>
               <p class="lead">Character Art & Game Design</p>
+              <hr class="my-4">
+              <p class="body-font">
+                Angel is an emerging character artist working in San Antonio, Texas.
+              </p>
+              <p class="body-font">
+                He works primarily in digital media with the occasional paper and pencil sketch to brainstorm ideas. He mainly employs influences from high fantasy, traditional cultures and tabletop roleplays.
+              </p>
+              <p class="body-font pb-2">
+                With a deep passion for lore and heritage found in our world, Angel is an ideal candidate for games and comics that strive to create an original, captivating world.</p>
+
+              <p class="lead">
+                <a class="btn btn-primary btn-lg mr-2" href="mailto:angel_saldana_mtz@yahoo.com" role="button">
+                  <img alt="email icon" src="static/mail4.png" /> Email </a>
+                <a class="btn btn-primary btn-lg" href="https://www.instagram.com/themildtacos/" role="button">
+                  <img alt="instagram icon" src="static/instagram.png" />
+                  Instagram </a>
+              </p>
+            </div>
+            <div class="d-md-none w-100">
+              <h1 class="display-3 display-font text-center">Angel Saldana</h1>
+              <p class="lead text-center">Character Art & Game Design</p>
+              <img class="w-100 p-0 m-0" src="static/art/home-banner.png" />
               <hr class="my-4">
               <p class="body-font">
                 Angel is an emerging character artist working in San Antonio, Texas.
